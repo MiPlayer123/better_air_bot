@@ -1,0 +1,5 @@
+from pyAudioAnalysis import audioTrainTest as aT
+
+# aT.extract_features_and_train(["D:\Research\Datasets\Audio Classification\BabyCry","D:\Research\Datasets\Audio Classification\GlassBreaking", "D:\Research\Datasets\Audio Classification\Gunshot"], 1.0, 1.0, aT.shortTermWindow, aT.shortTermStep, "svm", "svmSMtemp", False)
+aT.extract_features_and_train(["D:\Research\Datasets\Audio Classification\BabyCry","D:\Research\Datasets\Audio Classification\GlassBreaking", "D:\Research\Datasets\Audio Classification\Gunshot", "D:\Research\Datasets\Audio Classification\Falling", "D:\Research\Datasets\Audio Classification\Background", "D:\Research\Datasets\Audio Classification\SmokeAlarm"], 1.0, 1.0, aT.shortTermWindow, aT.shortTermStep, "randomforest", "randomForest2.1", False)
+# aT.extract_features_and_train(["D:\Research\Datasets\Audio Classification\BabyCry","D:\Research\Datasets\Audio Classification\GlassBreaking", "D:\Research\Datasets\Audio Classification\Gunshot", "D:\Research\Datasets\Audio Classification\Falling"], 1.0, 1.0, aT.shortTermWindow, aT.shortTermStep, "knn", "KNN2", False)
