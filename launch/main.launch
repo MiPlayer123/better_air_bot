@@ -1,0 +1,14 @@
+<launch>
+
+    <!-- Arguments -->
+    <arg name="map_file" default="$(find better_air_bot)/rur_navigation/maps/roomMap2.yaml"/>
+
+    <!-- Nodes -->
+    <node name="sensor_vals" pkg="better_air_bot" type="sensor_vals.py"/>
+    <node name="main" pkg="better_air_bot" type="main.py"/>
+
+    <!-- Robot -->
+    <include file="$(find better_air_bot)/launch/navigate.launch">
+        <arg name="map_file" value="$(arg map_file)"/>
+    </include>
+</launch>
